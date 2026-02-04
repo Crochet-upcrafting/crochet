@@ -1,2 +1,132 @@
-# crochet
-Crochet trendy couture by Indian designer Ashmath
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Upcrafting - Cute Wearables</title>
+    <style>
+        /* Reset and base styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Comic Sans MS', cursive; /* Fun, yarn-like font */ background: linear-gradient(to bottom, #f0e6ff, #ffe6f7); color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: #ff6b9d; }
+        a:hover { color: #ff4081; }
+
+        /* Header */
+        header { background: rgba(255, 255, 255, 0.8); padding: 20px; text-align: center; position: fixed; width: 100%; z-index: 10; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        header h1 { font-size: 2.5em; color: #ff6b9d; animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+        /* Hero Section */
+        #hero { padding: 120px 20px 60px; text-align: center; background: url('images/hero-bg.jpg') no-repeat center/cover; /* Add a cute crochet background image */ min-height: 50vh; display: flex; align-items: center; justify-content: center; }
+        #hero h2 { font-size: 2em; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        #hero p { font-size: 1.2em; margin-top: 10px; }
+
+        /* Sections */
+        section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+        section h2 { text-align: center; margin-bottom: 40px; font-size: 2em; color: #ff6b9d; }
+
+        /* Product Gallery */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .product { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .product:hover { transform: scale(1.05); }
+        .product img { width: 100%; height: 200px; object-fit: cover; }
+        .product h3 { padding: 15px; font-size: 1.5em; }
+        .product p { padding: 0 15px; color: #666; }
+        .buy-btn { display: block; margin: 15px; padding: 10px; background: #ff6b9d; color: white; text-align: center; border-radius: 10px; transition: background 0.3s; }
+        .buy-btn:hover { background: #ff4081; }
+
+        /* Fun Game Section */
+        #game { text-align: center; }
+        #yarn-ball { width: 100px; height: 100px; background: radial-gradient(circle, #ff6b9d, #ff4081); border-radius: 50%; position: relative; margin: 20px auto; cursor: pointer; animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        #score { font-size: 1.5em; margin-top: 10px; }
+
+        /* Footer */
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        footer a { color: #ff6b9d; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crochet Upcrafting</h1>
+    </header>
+
+    <section id="hero">
+        <div>
+            <h2>Welcome to Cozy Crochet Creations!</h2>
+            <p>Discover unique, handcrafted shawls, ponchos, cardigans, vests, and more. Fun, fluffy, and full of love!</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Cute Wearables</h2>
+        <div class="gallery">
+            <div class="product">
+                <img src="images/1769881196996-019c1523-9b0a-7c22-9bbe-2b659564ae02.png" alt="Crochet Shawl"> <!-- Replace with your image -->
+                <h3>Cozy Shawl</h3>
+                <p>Soft and stylish, perfect for chilly days.</p>
+                <a href="https://instagram.com/crochet_upcrafting" class="buy-btn" target="_blank">Buy Now on Instagram</a>
+            </div>
+            <div class="product">
+                <img src="images/1769881208675-019c1523-9b0a-7141-b8c3-9ed551f84cd5.jpg" alt="Crochet Poncho">
+                <h3>Fun Poncho</h3>
+                <p>Playful and warm, with vibrant colors.</p>
+                <a href="https://instagram.com/crochet_upcrafting" class="buy-btn" target="_blank">Buy Now on Instagram</a>
+            </div>
+            <div class="product">
+                <img src="images/3ca4670861110ed70e911963699fdded.jpg" alt="Crochet Cardigan">
+                <h3>Cute Cardigan</h3>
+                <p>Lightweight and adorable for any occasion.</p>
+                <a href="https://instagram.com/crochet_upcrafting" class="buy-btn" target="_blank">Buy Now on Instagram</a>
+            </div>
+            <div class="product">
+                <img src="images/vest.jpg" alt="Crochet Vest">
+                <h3>Snug Vest</h3>
+                <p>Cozy layers for layering fun.</p>
+                <a href="https://instagram.com/crochet_upcrafting" class="buy-btn" target="_blank">Buy Now on Instagram</a>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Hi! I'm passionate about crafting cute, one-of-a-kind crochet wearables. Each piece is made with love and sustainable yarns. Follow me on Instagram for behind-the-scenes fun!</p>
+    </section>
+
+    <section id="game">
+        <h2>Fun Yarn Ball Game!</h2>
+        <p>Click the yarn ball to bounce it and score points. How high can you go?</p>
+        <div id="yarn-ball"></div>
+        <div id="score">Score: 0</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Crochet Upcrafting. Follow us: <a href="https://instagram.com/crochet_upcrafting" target="_blank">@crochet_upcrafting</a></p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation (if you add a nav menu later)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fun yarn ball clicker game
+        let score = 0;
+        const yarnBall = document.getElementById('yarn-ball');
+        const scoreDisplay = document.getElementById('score');
+
+        yarnBall.addEventListener('click', () => {
+            score++;
+            scoreDisplay.textContent = `Score: ${score}`;
+            yarnBall.style.animation = 'none'; // Reset animation
+            setTimeout(() => yarnBall.style.animation = 'bounce 2s infinite', 10);
+        });
+    </script>
+</body>
+</html>
