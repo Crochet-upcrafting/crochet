@@ -62,13 +62,13 @@
         <h2>Our Cute Wearables</h2>
         <div class="gallery">
             <div class="product">
-                <img src="images/shawl.jpg" alt="Crochet Shawl"> <!-- Replace with your image -->
+                <img src="images/1769881196996-019c1523-9b0a-7c22-9bbe-2b659564ae02.png" alt="Crochet Shawl"> <!-- Replace with your image -->
                 <h3>Cozy Shawl</h3>
                 <p>Soft and stylish, perfect for chilly days.</p>
                 <a href="https://instagram.com/crochet_upcrafting" class="buy-btn" target="_blank">Buy Now on Instagram</a>
             </div>
             <div class="product">
-                <img src="images/poncho.jpg" alt="Crochet Poncho">
+                <img src="images/1769881208675-019c1523-9b0a-7141-b8c3-9ed551f84cd5.jpeg" alt="Crochet Poncho">
                 <h3>Fun Poncho</h3>
                 <p>Playful and warm, with vibrant colors.</p>
                 <a href="https://instagram.com/crochet_upcrafting" class="buy-btn" target="_blank">Buy Now on Instagram</a>
